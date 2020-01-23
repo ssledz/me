@@ -1,9 +1,10 @@
 #!/bin/bash
+set -x
 jekyll clean
 jekyll build
 cd _site
 git init
-gco -b gh-pages
+git checkout -b gh-pages
 git add -A
 git commit -m 'pages'
 git remote add origin git@github.com:ssledz/me.git
