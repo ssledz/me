@@ -1,0 +1,1 @@
+FROM ssledz/github-pages:latest
