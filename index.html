@@ -32,7 +32,7 @@ permalink: /
 
                 <ul>
                     {% if site.github_username %}
-                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}"><span class="description">GitHub</span></a></li>
+                    <li><a class="fa fa-2x fa-github" href="https://github.com/{{ site.github_username }}" target="_blank"><span class="description">GitHub</span></a></li>
                     {% endif %}
 
                     {% if site.codepen_username %}
@@ -40,7 +40,7 @@ permalink: /
                     {% endif %}
 
                     {% if site.facebook_username %}
-                    <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}"><span class="description">Facebook</span></a></li>
+                    <li><a class="fa fa-2x fa-facebook" href="https://facebook.com/{{ site.facebook_username }}" target="_blank"><span class="description">Facebook</span></a></li>
                     {% endif %}
 
                     {% if site.vk_username %}
@@ -48,7 +48,7 @@ permalink: /
                     {% endif %}
 
                     {% if site.twitter_username %}
-                    <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}"><span class="description">Twitter</span></a></li>
+                    <li><a class="fa fa-2x fa-twitter" href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><span class="description">Twitter</span></a></li>
                     {% endif %}
 
                     {% if site.google_plus_username %}
@@ -56,7 +56,7 @@ permalink: /
                     {% endif %}
 
                     {% if site.linkedin_username %}
-                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="description">LinkedIn</span></a></li>
+                    <li><a class="fa fa-2x fa-linkedin" href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank"><span class="description">LinkedIn</span></a></li>
                     {% endif %}
 
                     {% if site.vine_username %}
@@ -84,7 +84,7 @@ permalink: /
                     {% endif %}
 
                     {% if site.stack_of_username %}
-                    <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}"><span class="description">Stack OF</span></a></li>
+                    <li><a class="fa fa-2x fa-stack-overflow" href="https://stackoverflow.com/users/{{ site.stack_of_username }}" target="_blank"><span class="description">Stack OF</span></a></li>
                     {% endif %}
 
                     {% if site.reddit_username %}
@@ -104,15 +104,23 @@ permalink: /
                     {% endif %}
 
                     {% if site.blog_url %}
-                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}"><span class="description">Blog</span></a></li>
+                    <li><a class="fa fa-2x fa-tags" href="{{ site.baseurl }}{{ site.blog_url }}" target="_blank"><span class="description">Blog</span></a></li>
+                    {% endif %}
+
+                    {% if site.goodreads_url %}
+                    <li><a class="fa fa-2x fa-book" href="{{ site.goodreads_url }}" target="_blank"><span class="description">Goodreads</span></a></li>
                     {% endif %}
 
                     {% if site.email %}
-                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}"><span class="description">Email</span></a></li>
+                    <li><a class="fa fa-2x fa-envelope" href="mailto:{{ site.email }}" target="_blank"><span class="description">Email</span></a></li>
                     {% endif %}
 
                     {% if site.public_key_url %}
                     <li><a class="fa fa-2x fa-key" href="{{ site.public_key_url }}"><span class="description">PGP Key</span></a></li>
+                    {% endif %}
+
+                    {% if site.cv_url %}
+                    <li><a class="fa fa-2x fa-floppy-o" href="{{ site.cv_url }}" target="_blank"><span class="description">Cv</span></a></li>
                     {% endif %}
                 </ul>
         </div>
