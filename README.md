@@ -5,7 +5,6 @@
 * Very lightweight. No Javascript, No Bootstrap etc..
 * MIT licensed.
 
-
 ## See it in action
 <a href="https://ssledz.github.io/me">Live demo page</a>
 
@@ -16,3 +15,7 @@ It's licensed under Creative-Commons.
 
 This theme makes use of the amazing <a href="http://fontawesome.io/">Font Awesome</a> icons.
 
+## build & publish
+```bash
+./build.sh && ./publish.sh
+```

@@ -1,7 +1,5 @@
 #!/bin/bash
 set -x
-jekyll clean
-jekyll build
 cd _site
 git init
 git checkout -b gh-pages
